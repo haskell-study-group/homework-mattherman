@@ -1,5 +1,5 @@
-xAll f [] = True
-xAll f (x:xs) | f x == False = False
+xAll _ [] = True
+xAll f (x:xs) | not (f x)    = False
               | otherwise    = all f xs
 
 xAny f [] = False

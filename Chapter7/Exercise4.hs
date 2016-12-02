@@ -3,6 +3,6 @@
 --           where weights = iterate (*10) 1
 
 -- With foldl...
---dec2int = foldl (\x y -> x + 10*y) 0
+dec2int = foldl (\x y -> 10*x + y) 0
 
 -- Never got this one to actually compile :(
